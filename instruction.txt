@@ -1,0 +1,9 @@
+chmod 0777 files
+chmod 0777 temp
+chmod 0777 temp/thumbnail
+mkdir application/cache
+mkdir application/logs
+chmod 0777 application/cache
+chmod 0777 application/logs
+chmod 0777 application/searchindex
+chmod -R 0777 ckfinder/userfiles

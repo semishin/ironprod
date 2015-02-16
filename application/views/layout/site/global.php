@@ -8,7 +8,7 @@
     <meta name="keywords" content="<?php echo $s_keywords;?>">
     <link rel="stylesheet" type="text/css" href="/ironprod/css/style.css?1" />
     <link rel="stylesheet" type="text/css" href="/ironprod/css/fluid_1280.css" />
-
+    <link rel="shortcut icon" href="/ironprod/img/favicon.ico" >
 <!-- Иконки соц.сетей -->
     <link href="/ironprod/css/social-likes_flat.css" rel="stylesheet">
 <!---->

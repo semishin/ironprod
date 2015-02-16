@@ -43,7 +43,9 @@
                         <?php } ?>
                     <?php } ?>
                 </div>
-                <div class="separator_"></div>
+                <?php if ($images) {?>
+                    <div class="separator_"></div>
+                <?php } ?>
                 <div class="other_work">
                     <?php foreach ($pre_service as $item) { ?>
                         <div class="column">

@@ -28,9 +28,17 @@
                 <i></i>
             </div>
             <div class="search">
-                <input type="text" value="Поиск. Например, стальные решетки на окна">
-                <button class="" type="submit"><span>Найти</span></button>
+                <form action="/search">
+                    <input type="text" name="q" placeholder="Поиск по сайту">
+                    <button class="" type="submit"><span>Найти</span></button>
+                </form>
             </div>
+<!--            <div class="search_w">-->
+<!--                <form action="/search">-->
+<!--                    <input type="text" name="q" placeholder="Поиск по сайту"/>-->
+<!--                    <input type="submit" value="Поиск"/>-->
+<!--                </form>-->
+<!--            </div>-->
         </div>
         <div class="grid_16 margin_top20 margin_minus20bot" style="z-index:0">
             <img src="/ironprod/img/shadow_top.jpg" width="100%" />

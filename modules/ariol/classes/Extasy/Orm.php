@@ -111,7 +111,7 @@ class Extasy_Orm extends Kohana_ORM implements ArrayAccess
 	
 		$resultArray = $PDO->fetchAll(PDO::FETCH_ASSOC);
 
-		$sql = "SELECT count(*) as count FROM {$this->_table_name} WHERE ACTIVE = 1 AND {$like} ORDER BY {$order_by_str}name DESC LIMIT {$offset},{$limit}";
+		$sql = "SELECT count(*) as count FROM {$this->_table_name} WHERE ACTIVE = 1 AND {$like}";
 		
 		$database = self::PDO();
 		$PDO = $database->prepare($sql);

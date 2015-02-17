@@ -13,6 +13,14 @@ Route::set('site-index', '')
 		'name' => 'Главная'
 	));
 
+Route::set('site-search', 'search(/<page>)', array('page' => '\d+'))
+
+    ->defaults(array(
+        'directory' => 'site',
+        'controller' => 'search',
+        'action' => 'index',
+    ));
+
 Route::set('site-ourproduct', 'ourproduct')
     ->defaults(array(
         'directory' => 'site',
@@ -125,13 +133,14 @@ Route::set('site-page', '<url>', array('url' => '.*'))
         'controller' => 'page',
         'action'     => 'index',
     ));
-/*
-Route::set('site-search', 'search(/<page>)', array('page' => '\d+'))
 
+
+/*
+Route::set('site-page', '<url>', array('url' => '.*'))
     ->defaults(array(
         'directory' => 'site',
-        'controller' => 'search',
-        'action' => 'index',
+        'controller' => 'page',
+        'action'     => 'index',
     ));
 
 Route::set('site-callback', 'request/callback')
@@ -218,10 +227,5 @@ Route::set('site-discount', 'discount/<url>')
         'action'     => 'item',
     ));
 
-Route::set('site-page', '<url>', array('url' => '.*'))
-	->defaults(array(
-		'directory' => 'site',
-		'controller' => 'page',
-		'action'     => 'index',
-	));
+
 */

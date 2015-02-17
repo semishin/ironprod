@@ -49,13 +49,17 @@
                 <div class="other_work">
                     <?php foreach ($pre_service as $item) { ?>
                         <div class="column">
-                            <span class="column_img"><a href="/service/<?php echo $url ?>/<?php echo $item->url ?>"><img src="<?php echo Lib_Image::resize_bg($item->main_image, 'service',$item->id, 318, 212); ?>" alt="<?php echo $item->name ?>" class="works_img"></a></span>
+                            <?php if ($item->main_image) { ?>
+                                <span class="column_img"><a href="/service/<?php echo $url ?>/<?php echo $item->url ?>"><img src="<?php echo Lib_Image::resize_bg($item->main_image, 'service',$item->id, 318, 212); ?>" alt="<?php echo $item->name ?>" class="works_img"></a></span>
+                            <?php } ?>
                             <span class="column_name"><a href="/service/<?php echo $url ?>/<?php echo $item->url ?>"><?php echo $item->name ?></a></span>
                         </div>
                     <?php } ?>
                     <?php foreach ($post_service as $item) { ?>
                         <div class="column">
-                            <span class="column_img"><a href="/service/<?php echo $url ?>/<?php echo $item->url ?>"><img src="<?php echo Lib_Image::resize_bg($item->main_image, 'service',$item->id, 318, 212); ?>" alt="<?php echo $item->name ?>" class="works_img"></a></span>
+                            <?php if ($item->main_image) { ?>
+                                <span class="column_img"><a href="/service/<?php echo $url ?>/<?php echo $item->url ?>"><img src="<?php echo Lib_Image::resize_bg($item->main_image, 'service',$item->id, 318, 212); ?>" alt="<?php echo $item->name ?>" class="works_img"></a></span>
+                            <?php } ?>
                             <span class="column_name"><a href="/service/<?php echo $url ?>/<?php echo $item->url ?>"><?php echo $item->name ?></a></span>
                         </div>
                     <?php } ?>
